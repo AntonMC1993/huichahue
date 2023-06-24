@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 62.5%;
+}
+body {
+    background-image: url("./images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* Dejamos una imagen de fondo para nuestro body */
+}
+/* INICIO HEADER */
+header {
+    position: sticky;
+    /* Fijamos esta barra para que aparezca siempre que hacemos scroll */
+    top: 0;
+    padding-top: .5rem;
+    /* Generamos un margen interno para que el logo no tope arriba */
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1; /*sirve para sobreponer cosas cuando tiene el valor 1 es el primero q se verá*/
+}
+.contenedor-image {
+    display: flex;
+    justify-content: center;
+    /* Centramos el logo en la barra */
+}
+.barra-nav{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Ubicamos con el mismo espacio  alrededor para hacerlo responsivo */
+}
+#menu {
+    position: relative;
+    bottom: 5vh;
+    left: 2vh;
+     /* Ubicamos por sobre el contenedor para nivelarlo en la barra sin afectar a los botones en el centro */
+}
+#carrito {
+    position: relative;
+    bottom: 6vh;
+    right: 2vh;
+     /* Ubicamos por sobre el contenedor para nivelarlo en la barra sin afectar a los botones en el centro */
+}
+.botones {
+    /* Diseño visual de botones */
+    background-color:rgba(0, 0, 0, 0.509);
+    border: #D9902C;
+    border-radius: 1rem;
+    border-style: groove;
+    padding: 0 3vh;
+    text-align: center;
+    height:30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Bangers', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    /* Diseño visual de botones */
+}
+a:hover {
+    color: #D9902C;
+    /* Cambio de color para cursor */
+}
+/* FIN DEL HEADER */
+
+
+      /*Carrusel*/
+
+      .container{
+        margin: auto;
+        background-color: rgba(67, 51, 40, 0.418); /*opacidad recuadro alrededor*/
+        width: 850px;
+        padding: 85px;
+        
+        
+      }
+      
+      ul, li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+      }
+      
+      ul.slider{
+        position: relative;
+        width: 680px;
+        height: 300px;
+      }
+      
+      ul.slider li {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          opacity: 0;
+          width: inherit;
+          height: inherit;
+          transition: opacity .5s;
+          background:#ebd5b6e5;
+      }
+      
+      ul.slider li img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+      
+      ul.slider li:first-child {
+          opacity: 1; 
+      }
+      
+      ul.slider li:target {
+          opacity: 1; 
+      }
+      
+      .menu{
+        text-align: center;
+        margin: 20px;
+      }
+      
+      .menu li{
+        display: inline-block;
+        text-align: center;
+      }
+      
+      .menu li a{
+        display: inline-block;
+        color: rgb(243, 134, 9);
+        text-decoration: none;
+        background-color: rgb(254, 254, 255);
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        border-radius: 100%;
+      }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+.rectangulo2 {  /*Productos destacados*/
+    position: relative;
+    width: 1365px;           
+    height: 80px;          
+    background: rgb(0, 0, 0);        
+    border: 2px solid #e37c14; 
+    margin: -50px;
+    border-style: groove;  
+    text-align: center;
+    font-family: 'Bangers';
+    color: #fffefc;
+    font-size:xx-large;
+    font-weight: 400;
+    line-height: 70px;
+  }
+
+
+.rectangulo3 {  /*Packs*/
+    position: relative;
+    width: 1365px;           
+    height: 80px;          
+    background: rgb(0, 0, 0);        
+    border: 2px solid #e37c14; 
+    margin: -50px;
+    border-style: groove;  
+    text-align: center;
+    font-family: 'Bangers';
+    color: #fffefc;
+    font-size:xx-large;
+    font-weight: 400;
+    line-height: 70px;
+    font-style: normal;
+}
+.burbujas {
+position: relative;
+width: 1314px;
+
+}
+
+
+.rectangulo4 {  /*ObjetivoSocioambientales*/
+    position: relative;
+    width: 1365px;           
+    height: 80px;          
+    background: rgb(0, 0, 0);        
+    border: 2px solid #e37c14; 
+    margin: -50px;
+    border-style: groove;  
+    text-align: center;
+    font-family: 'Bangers';
+    color: #fffefc;
+    font-size:xx-large;
+    font-weight: 400;
+    line-height: 70px;
+    font-style: normal;
+}
+
+.objetivosoc {
+    position: relative;
+    width: 900px;
+}
+
+/************************************ INICIO FOOTER ************************************/
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.containerfoooter {
+    max-width: 1170px;
+    margin:auto;
+}
+
+.rowfooter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: 	#FFFFFF;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: 'Bangers', cursive;
+    position: relative; 
+}
+.footer-col h4 ::before { 
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: 	#FFFFFF;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.footer-col .redes-sociales-link a {
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 0 -10px -15px 0;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.footer-col .redes-sociales-link ul li {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-bottom: 0.2px;
+    text-align: center;
+}
+
+.footer-col .partners-logos ul{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-texto-copyright {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: 	#999;
+    width: 100%;
+    padding: 8px 40px;
+    align-items: baseline;
+}
+
+@media (max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:574px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+/************************************ FIN FOOTER ************************************/
+
+
+
