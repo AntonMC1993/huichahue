@@ -67,6 +67,51 @@ a:hover {
     /* Cambio de color para cursor */
 }
 /* FIN DEL HEADER */
+/************************************ INICIO VERIFICACIÓN EDAD ************************************/
+
+#container-verificacion-edad{
+    opacity: .3;
+}
+
+.pop-up{
+    width: 100%;
+    height: 350px;
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 50%;
+    margin-top: -100px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(247, 247, 247, 0.8);
+}
+
+.pop-up h1{
+    font-size: 24px;
+    font-family: 'Bangers', cursive;
+    color: #D9902C;
+}
+
+.pop-up p{
+    font-size: 22px;
+    font-family: 'Bangers', cursive;
+    color: #4d4747;
+}
+
+.pop-up .boton {
+    background-color: #2A2929;
+    font-size: 18px;
+    font-family: 'Bangers', cursive;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 150px;
+    margin-top: 32px;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+/******************************** FIN VERIFICACIÓN EDAD ************************************/
 
 
       /*Carrusel*/
