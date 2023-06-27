@@ -383,4 +383,93 @@ ul {
 /************************************ FIN FOOTER ************************************/
 
 
+/************************************ SOBRE NOSOTROS ************************************/
 
+main {
+    background-color: rgba(255, 255, 255, 0.55);
+    overflow-x: hidden;
+}
+
+.titulosection1 {
+    font-size: 40px;
+    font-family: 'Bangers';
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.sobrenosotros {
+    padding: 40px;
+}
+
+.sobrenosotros p {
+    font-size: 30PX;
+    font-family: 'Open Sans';
+}
+
+.nuestrahistoria, .mundoconsciente, .mision, .vision {
+    /*background-color: rgba(172, 255, 47, 0.229);
+    border-radius: 30px;*/
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .nuestrahistoria, .mundoconsciente, .mision, .vision {
+      flex-direction: row;
+    }
+    
+    .video-nuestrahistoria, .image-mundoconsciente, .image-mision, .image-vision {
+      width: 50%;
+    }
+    
+    .text-nuestrahistoria, .text-mundoconsciente, .text-mundoconsciente, .text-mision, .text-vision {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .nuestrahistoria, .mundoconsciente, .mision, .vision {
+      flex-direction: column;
+    }
+    
+    .video-nuestrahistoria, .image-mundoconsciente, .image-mision, .image-vision, .text-nuestrahistoria, .text-mundoconsciente, .text-mundoconsciente, .text-mision, .text-vision {
+      width: 100%;
+    }
+  }
+
+.titulosection2 {
+    font-size: 40px;
+    font-family: 'Bangers';
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.nuestroscolaboradores {
+    background-color: rgba(255, 255, 255, 0.405);
+    padding: 30px;
+    
+}
+
+.btncolaboradores1, .btncolaboradores2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.btncolaboradores1 button, .btncolaboradores2 button {
+    background: none;
+    border: none;
+    border: none;
+    background: none;
+}
+
+.btncolaboradores1 button img, .btncolaboradores2 button img {
+    cursor: pointer;
+}
+
+
+/************************************ FIN SOBRE NOSOTROS ************************************/
