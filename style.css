@@ -5,22 +5,35 @@
     padding: 0;
     font-size: 62.5%;
 }
-body {
-    background-image: url("./images/background.jpg");
+/* body {
+    background-image: url("../huichahue/IMAGENES/background.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    Dejamos una imagen de fondo para nuestro body
+} */
+body{
+    background-image: url(".//IMAGENES/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    font-family: 'Bangers', cursive;
+    margin: 0 auto;
+    color: black
     /* Dejamos una imagen de fondo para nuestro body */
+
 }
+
 /* INICIO HEADER */
 header {
     position: sticky;
-    /* Fijamos esta barra para que aparezca siempre que hacemos scroll */
+    width: 100%;;
+    z-index: 1;/* Fijamos esta barra para que aparezca siempre que hacemos scroll */
     top: 0;
     padding-top: .5rem;
     /* Generamos un margen interno para que el logo no tope arriba */
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1; /*sirve para sobreponer cosas cuando tiene el valor 1 es el primero q se verá*/
 }
 .contenedor-image {
     display: flex;
@@ -28,7 +41,7 @@ header {
     /* Centramos el logo en la barra */
 }
 .barra-nav{
-    height: 7vh;
+    height: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -36,18 +49,14 @@ header {
 }
 #menu {
     position: relative;
-    bottom: 5vh;
-    left: 2vh;
-     /* Ubicamos por sobre el contenedor para nivelarlo en la barra sin afectar a los botones en el centro */
-}
-#carrito {
-    position: relative;
-    bottom: 6vh;
-    right: 2vh;
+    left: 20px;
+    bottom: 60px;
+
      /* Ubicamos por sobre el contenedor para nivelarlo en la barra sin afectar a los botones en el centro */
 }
 .botones {
     /* Diseño visual de botones */
+    
     background-color:rgba(0, 0, 0, 0.509);
     border: #D9902C;
     border-radius: 1rem;
@@ -67,6 +76,267 @@ a:hover {
     /* Cambio de color para cursor */
 }
 /* FIN DEL HEADER */
+
+.container-title{
+    width: 100%;
+    background-color: rgba(229, 218, 218, 0.548);
+}
+
+#titulo-tienda{
+    font-size: 40px;
+    font-family: 'Bangers';
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.boton{
+    font-family: 'Bangers';
+    padding: 20px;
+    border-radius: 50px;
+    background-color: burlywood;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #fff;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Estilos de header*/
+/*header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}*/ 
+
+.container-icon{
+    position: relative;
+
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-icon{
+    margin-right: 20px;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 15px;
+
+}
+
+.btn-add-cart{
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20); /*línea del total*/
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;    
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+
+
+/*Main*/
+.container-items{
+    font-family: sans-serif, cursive;
+    font-size: 6rem;
+    background-color: rgba(229, 218, 218, 0.555);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.info-product h2{
+    font-size: large;
+    font-family: 'Bangers';
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /*Fuerza una imagen a que se centre independiente*/
+    border-radius: 10px 10px 0 0; 
+    transition: all .5s; /*le da el efecto bonito al zoom in*/
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.3); /*Agrega el zoom in, pero no tan bonito*/
+}
+
+.info-product{
+    min-height: 340px;
+    padding: 15px 30px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    align-self: end;
+    align-self: center;
+    position: relative;
+    bottom: 0%;
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .container-items{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /************************************ INICIO VERIFICACIÓN EDAD ************************************/
 
 #container-verificacion-edad{
